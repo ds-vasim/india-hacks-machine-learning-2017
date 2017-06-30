@@ -41,10 +41,10 @@ test.drop('Id',inplace=True,axis=1)
 #               "bootstrap": [True, False],
 #               "criterion": ["gini", "entropy"]}
 
-# previous best score - 99.90069 for mapping = {'Front':0, 'Left':1, 'Rear':2, 'Right':3}
-clf1 = RandomForestClassifier(n_estimators = 1000, oob_score = True, n_jobs = -1,random_state =15, max_features = 4, min_samples_leaf = 5,min_samples_split=5)
+# previous best score - 99.90094 for mapping = {'Front':0, 'Left':1, 'Rear':2, 'Right':3}
+clf1 = RandomForestClassifier(n_estimators = 1000, oob_score = True, n_jobs = -1,random_state =15, max_features = 4, min_samples_leaf = 8,min_samples_split=5)
 clf2 = RandomForestClassifier(n_estimators = 1000, oob_score = True, n_jobs = -1,random_state =70, max_features = "auto", min_samples_leaf = 30)
-clf3 = RandomForestClassifier(n_estimators = 1000, oob_score = True, n_jobs = -1,random_state =35, max_features = 4, min_samples_leaf = 15)
+clf3 = RandomForestClassifier(n_estimators = 1000, oob_score = True, n_jobs = -1,random_state =35, max_features = 4, min_samples_leaf = 17)
 #clf4 = RandomForestClassifier(n_estimators = 1000, oob_score = True, n_jobs = -1,random_state =35, max_features = "auto", min_samples_leaf = 15)
 #clf5 = RandomForestClassifier(n_estimators = 1000, oob_score = True, n_jobs = -1,random_state = 0, max_features = "auto", min_samples_leaf = 5)
 
